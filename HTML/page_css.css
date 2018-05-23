@@ -821,7 +821,7 @@ display: none;
 .mobilenavbar ul {
 	background-color:#D8D1B5;
 	position: relative;
-	top: 96px;
+	top: 72px;
 	z-index: 1;
 	height: 0;
 	overflow: hidden;
@@ -843,17 +843,18 @@ display: none;
 	color: white;
 }
 .slider_pic{
-	width: 414px;
+	width: 100%;
 	height: 290px;
 	background-image: url('mobileslider-03.png');
 	margin: auto auto;
 	background-attachment: scroll;
 }
 .pic_text{
-	width: 414px;
+	width: 100%;
 	height: 100px;
 	text-align: center;
 	margin: auto auto;
+	padding-bottom: 10px;
 }
 .pic_text p, .pic_text p2, .pic_text p3{
 	font-size: 16px;
@@ -871,7 +872,7 @@ display: none;
 	background-image: url('mobileoriginal-03.png');
 }
 .out_about{
-	width: 414px;
+	width: 100%;
 	height: 980px;
 	background-color:#D8D1B5;
 	position: absolute;
@@ -880,7 +881,7 @@ display: none;
 	transform: translate(-50%, -50%);
 }
 .about{
-	width:414px;
+	width:100%;
 	height: 980px;
 	padding: 10px 0;
 	border: solid 2px white;
@@ -911,7 +912,7 @@ display: none;
 	background-image: url('about2.jpg');
 }
 .out_news{
-	width: 414px;
+	width: 100%;
 	height:250px;
 	margin-left: auto;
 	margin-right: auto;
@@ -927,14 +928,14 @@ display: none;
 }
 
 .today_news{
-	width: 414px;
+	width: 100%;
 	height: 250px;
 	margin-top: 40px;
 	list-style: none;
 	overflow: hidden;
 }
 .today_news .title1{
-	width: 414px;
+	width: 100%;
 	height: 22px;
 }
 .today_news .title{
@@ -1099,6 +1100,7 @@ display: none;
 	width: 100%;
 	height: 100px;
 	display:flex;
+	justify-content: center;
 }
 .footer_bottom{
 	width: 100%;
@@ -1109,8 +1111,8 @@ display: none;
 }
 .footer_bt{
 	font-size: 13px;
-	margin-right: 10px;
-	margin-left: 30px;
+ 	margin-right: 3px;
+	margin-left: 10px;
 	margin-top: 40px;
 	letter-spacing: 1px;
 }
