@@ -1,0 +1,142 @@
+*{
+	border: solid 1px;
+}
+.box{
+	width:500px;
+	height:500px;
+	border: solid 1px;
+	padding: 50px 80px;
+}
+.box h1{
+	color: black;
+}
+.box p{
+
+    color: black;
+}
+.box p, .box h1{
+	opacity: 0;
+	transition-duration: 0.5s;
+
+} 
+.box p{
+	transition-delay: 0.2s;
+}
+.box:hover p, .box:hover h1{
+	opacity: 1;
+}
+.cross{
+	width: 200px;
+	height:200px;
+	border: solid 1px;
+	position: relative;
+}
+.cross .line1, .cross .line2{
+	width: 100px;
+	height: 20px;
+	border: solid 1px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	transition-duration: 0.5s;
+	transition-delay: 0.2s; 
+}
+.cross:hover .line1{
+	transform:translate(-50%,-50%) rotate(45deg)
+}
+.cross:hover .line2{
+	transform:translate(-50%,-50%) rotate(-45deg)
+}
+
+.block{
+	width: 100px;
+	height: 100px;
+	border: solid 1px;
+	position: relative;
+}
+.block .line3, .block .line4, .block .line5{
+	width: 50px;
+	height: 10px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	transition-duration:0.5s; 
+}
+.block .line3{
+	top: 25%;
+}
+.block .line5{
+	top: 75%;
+}
+.block:hover .line3{
+	transform:translate(-50%,-50%) rotate(45deg);
+	top: 50%;
+}
+.block:hover .line5{
+	transform:translate(-50%,-50%) rotate(-45deg);
+	top: 50%;
+}
+.block:hover .line4{
+	opacity: 0;
+}
+
+.boxs{
+	width: 1000px;
+	height: 800px;
+	border: solid 1px;
+	position: relative;
+}
+.boxs .ox1, .boxs .ox2, .boxs .ox3, .boxs .ox4, .boxs .ox5{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	bottom: 0;
+}
+.boxs .ox1{
+	left: 50px;
+	animation: ani1 3s infinite alternate;
+}
+.boxs .ox2{
+	left: 250px;
+	animation: ani2 4s infinite alternate;
+}
+.boxs .ox3{
+	left: 450px;
+	animation:ani3 1s infinite alternate ease-in-out;
+}
+.boxs .ox4{
+	left: 650px;
+	border-radius: 50px;
+	animation: ani4 2s infinite alternate ease-in-out;
+}
+.boxs .ox5{
+	left: 850px;
+	animation: ani5 2s infinite alternate ease-in-out;
+}
+
+ @keyframes ani1{
+ 	0%{left:0;}
+ 	50%{left:100px;}
+ 	100%{left:0;}
+ }
+ @keyframes ani2{
+ 	0%{left:250px;}
+ 	50%{transform: rotate(360deg)}
+ 	100%{bottom:250px;}
+ }
+ @keyframes ani3{
+ 	from{transform: skewX(20deg);}
+ 	to{transform: skewX(-20deg);}
+ }
+@keyframes ani4{
+	0%{left: 0px}
+	50%{transform: translate(100px, -200px) scale(2, 0.2);}
+	100%{left:650px;}
+ }
+@keyframes ani5{
+	0%{bottom: 500px}
+	50%{left:300px; transform: scale(2, 0.2) }
+	100%{left:850px;}
+ }

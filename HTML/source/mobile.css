@@ -1,0 +1,57 @@
+.mobilenavbar{
+	width: 414px;
+	height: 110px;
+	border: solid 1px;
+	display: flex;
+	position: relative;
+}
+.mobilenavbar .collapse{
+	width: 40px;
+	height: 40px;
+	border: solid 1px;
+	position: absolute;
+	left: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.mobilenavbar .collapse .line {
+	width: 25px;
+	height: 4px;
+	border: solid 1px;
+	left: 50%;
+	top: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+.mobilenavbar .collapse .line:nth-child(1) {
+	top: 25%;
+}
+.mobilenavbar .collapse .line:nth-child(3) {
+	top: 75%;
+}
+
+.buy{
+	width: 40px;
+	height: 40px;
+	border: solid 1px;
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+
+}
+.logo{
+	width: 160px;
+	height: 60px;
+	border: solid 1px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.mobilenavbar > ul {
+	background-color: #fea;
+	position: relative;
+	top: 120px;
+	z-index: 1;
+}

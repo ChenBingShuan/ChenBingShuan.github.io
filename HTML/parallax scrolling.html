@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Parallax Scrolling</title>
+	<link rel="icon" href="favicon2.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="favicon2.ico" type="image/x-icon"/>
+	<style>
+	body{
+		margin: 0;
+	}
+		#all{
+			width: 80%;
+			height: 300vh;
+			margin-right: auto;
+			margin-left: auto;
+			position: relative;
+
+		}
+		#logo{
+			width: 14vh;
+			height: 14vh;
+			background-color: black;
+			border-radius: 7vh;
+			position: fixed;
+			left: calc(10% + 20px);
+			top: 20px;
+		}
+		#menu{
+			width: 30vh;
+			height: 6vh;
+			background-color: gray;
+			position: fixed;
+			right: calc(10% + 20px);
+			top:20px;
+		}
+		#mA{
+			width: 6vh;
+			height: 6vh;
+			background-color: white;
+			border-radius: 3vh;
+			float: left;
+		}
+        #mB{
+			width: 6vh;
+			height: 6vh;
+			background-color: white;
+			border-radius: 3vh;
+			float: left;
+		}
+		#mC{
+			width: 6vh;
+			height: 6vh;
+			background-color: white;
+			border-radius: 3vh;
+			float: right;
+		}
+		#boxA{
+			width: 100%;
+			height:100vh;
+			background-image: url('img/D.jpg');
+			background-attachment: fixed;
+			background-position: center;
+			background-size: cover;
+			}
+		#boxB{
+			width: 100%;
+			height:100vh;
+			background-image: url('img/E.jpg');
+			background-attachment: fixed;
+			background-position: center;
+			background-size: cover;
+			}
+		#boxC{
+			width: 100%;
+			height:100vh;
+			background-image: url('img/F.jpg');
+			background-attachment: fixed;
+			background-position: center;
+			background-size: cover;
+			}
+		#picA{
+			width: 100%;
+			height: 50vh;
+			background-image: url('img/A.jpg');
+			background-attachment: fixed;
+			background-position: center;
+			background-size: cover;
+
+		}
+		#textA{
+			width: 100%;
+			height: calc(25vh + 25px);
+			background-color: rgba(0, 0, 0, 0.5);
+			padding-top:calc(25vh - 25px);
+
+		}
+		#picB{
+			width: 100%;
+			height: 50vh;
+			background-image: url('img/B.jpg');
+			background-attachment: fixed;
+			background-position: center;
+			background-size: cover;
+		}
+		#textB{
+			width: 100%;
+			height: calc(25vh + 25px);
+			background-color: rgba(0, 0, 0, 0.5);
+			padding-top:calc(25vh - 25px);
+		}
+		#picC{
+			width: 100%;
+			height: 50vh;
+			background-image: url('img/C.jpg');
+			background-attachment: fixed;
+			background-position: center;
+			background-size: cover;
+		}
+		#textC{
+			width: 100%;
+			height: calc(25vh + 25px);
+			background-color: rgba(0, 0, 0, 0.5);
+			padding-top:calc(25vh - 25px);
+		}
+		#pxA{
+			width: 200px;
+			height:50px ;
+			background-color: gray;
+			margin-right: auto;
+			margin-left: auto;
+			border-radius: 20px;
+		}
+		#pxB{
+			width: 200px;
+			height:50px ;
+			background-color: gray;
+			margin-right: auto;
+			margin-left: auto;
+			border-radius: 20px;
+		}
+		#pxC{
+			width: 200px;
+			height:50px ;
+			background-color: gray;
+			margin-right: auto;
+			margin-left: auto;
+			border-radius: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div id="all">
+		<div id="logo"></div>
+		<div id="menu">
+			<div id="mA"></div>
+			<div id="mB"></div>
+			<div id="mC"></div>
+		</div>
+		<div id="boxA">
+			<div id="picA"></div>
+			<div id="textA"><div id="pxA"></div>
+			</div>
+		</div>
+		<div id="boxB">
+			<div id="picB"></div>
+			<div id="textB">
+				<div id="pxB"></div>
+			</div>
+		</div>
+		<div id="boxC">
+			<div id="picC"></div>
+			<div id="textC">
+				<div id="pxC"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

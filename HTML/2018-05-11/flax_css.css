@@ -1,0 +1,13 @@
+*{
+	border: solid 1px;
+}
+.block{
+	width: 980px;
+	height: 1800px;
+	background-image: url('img/bg-default.jpg');
+}
+.items{
+	width: 322px;
+	height: 290px;
+
+}

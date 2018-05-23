@@ -1,0 +1,96 @@
+*{
+	border: solid 1px;
+}
+.box{
+	width:500px;
+	height:500px;
+	border: solid 1px;
+	padding: 50px 80px;
+}
+.box h1{
+	color: black;
+}
+.box p{
+
+    color: black;
+}
+.box p, .box h1{
+	opacity: 0;
+	transition-duration: 0.5s;
+
+} 
+.box p{
+	transition-delay: 0.2s;
+}
+.box:hover p, .box:hover h1{
+	opacity: 1;
+}
+.cross{
+	width: 200px;
+	height:200px;
+	border: solid 1px;
+	position: relative;
+}
+.cross .line1, .cross .line2{
+	width: 100px;
+	height: 20px;
+	border: solid 1px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	transition-duration: 0.5s;
+	transition-delay: 0.2s; 
+}
+.cross:hover .line1{
+	transform:translate(-50%,-50%) rotate(45deg)
+}
+.cross:hover .line2{
+	transform:translate(-50%,-50%) rotate(-45deg)
+}
+
+.block{
+	width: 100px;
+	height: 100px;
+	border: solid 1px;
+	position: relative;
+}
+.block .line3, .block .line4, .block .line5{
+	width: 50px;
+	height: 10px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	transition-duration:0.5s; 
+}
+.block .line3{
+	top: 25%;
+}
+.block .line5{
+	top: 75%;
+}
+.block:hover .line3{
+	transform:translate(-50%,-50%) rotate(45deg);
+	top: 50%;
+}
+.block:hover .line5{
+	transform:translate(-50%,-50%) rotate(-45deg);
+	top: 50%;
+}
+.block:hover .line4{
+	opacity: 0;
+}
+
+.boxs{
+	width: 1000px;
+	height: 800px;
+	position: relative;
+	border: solid 1px;
+}
+.boxs .ox{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	bottom: 0;
+}
