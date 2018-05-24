@@ -42,6 +42,9 @@ body{
 	color: white;
 	font-size: 15px;
 }
+.choicebt span{
+	color:black;
+}
 .choicebt:hover span{
 	color: white;
 	font-size: 14px;
