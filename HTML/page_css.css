@@ -691,7 +691,7 @@ html, body {
     	background-position: center;
     }
 .demo .mainNavg {  
-		    height: 35px;  
+		    height: 35px;  //1  
 		    background-color:  #D8D1B5; 
 		}  
 		.demo .mainNavg ul {  
@@ -702,13 +702,13 @@ html, body {
 		.demo .mainNavg ul li {  
 		    float: left;      
 		    background-color: #D8D1B5;  
-		    margin: 5px 3px;  
-		    height: 30px; 
+		    margin: 5px 3px;//3  
+		    height: 30px;  //2  
 		}  
 		.mainNavg ul li a {  
 		    display: block;  
 		    width:70px;  
-		    height: 20px;  
+		    height: 20px;  //4  
 		    padding: 5px 20px;    
 		    line-height: 24px;  
 		    text-decoration: none;  
