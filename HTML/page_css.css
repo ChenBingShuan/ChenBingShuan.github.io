@@ -42,12 +42,12 @@ body{
 	color: white;
 	font-size: 15px;
 }
-.choicebt span{
-	color:black;
-}
 .choicebt:hover span{
 	color: white;
 	font-size: 14px;
+}
+.choicebt span{
+	color:black;
 }
 .choicebt_simple{
 	font-size: 18px;
@@ -224,10 +224,10 @@ body{
 	}
 .today_news1 p2:hover{
 	background-color: #D8D1B5;
-	color: white; 
+	color: black; 
 }
 .today_news1 p:hover{
-	color: white;
+	color:black;
 }
 .today_news1 .li_5 a p{
 	margin-left: 800px;
@@ -284,8 +284,8 @@ body{
 	font-weight: bold;
 }
 .demo.product_box ul li.product_other:hover{
-    color: white;
-    cursor: pointer;
+    color:black;
+	cursor: pointer;
 }
 .demo.product_box ul li.product_other::after{
 	content: '｜';
@@ -466,7 +466,7 @@ body{
 	align-items: flex-end;
 }
 .user{
-	margin-bottom: 15px;
+	margin-bottom: 13px;
 	margin-right: 5px;
 	font-size: 18px;
 }
@@ -497,26 +497,26 @@ body{
 	width: 60%;
 	height: 26px;
 	background-color:rgba(0, 0, 0, 0.5);
-	margin-bottom: 20px;
+	margin-bottom: 26px;
 	margin-left: 8px;
 }
-.user2:hover{
-	background-color: white;
-	height: 30px;
-	transition-duration: 0.5s;
+.user2 .up{
+	width: 100%;
+	height: 20px;
 }
+
 .password2{
 	width: 60%;
 	height: 26px;
 	background-color: rgba(0, 0, 0, 0.5);
 	margin-left: 8px;
-	margin-bottom: 13px;
+	margin-bottom: 10px;
 }
-.password2:hover{
-	background-color: white;
-	height: 30px;
-	transition-duration: 0.5s;
+.password2 .down{
+	width: 100%;
+	height: 20px;
 }
+
 .enter{
 	width: 50px;
 	height: 26px;
@@ -691,7 +691,7 @@ html, body {
     	background-position: center;
     }
 .demo .mainNavg {  
-		    height: 35px;  //1  
+		    height: 35px;
 		    background-color:  #D8D1B5; 
 		}  
 		.demo .mainNavg ul {  
@@ -702,13 +702,13 @@ html, body {
 		.demo .mainNavg ul li {  
 		    float: left;      
 		    background-color: #D8D1B5;  
-		    margin: 5px 3px;//3  
-		    height: 30px;  //2  
+		    margin: 5px 3px;  
+		    height: 30px; 
 		}  
 		.mainNavg ul li a {  
 		    display: block;  
 		    width:70px;  
-		    height: 20px;  //4  
+		    height: 20px;  
 		    padding: 5px 20px;    
 		    line-height: 24px;  
 		    text-decoration: none;  
@@ -1064,13 +1064,11 @@ display: none;
 .user2{
 	width: 70%;
 	height: 22px;
-	background-color:rgba(0, 0, 0, 0.5);
 	margin-bottom: 20px;
 	margin-left: 8px;
+	background-color: white;
 }
-.user2:hover{
-	height: 23px;
-} 
+ 
 .password2{
 	width: 70%;
 	height: 22px;
@@ -1125,6 +1123,7 @@ display: none;
 	margin-left: 10px;
 	margin-top: 40px;
 	letter-spacing: 1px;
+	
 }
 .bottom_left{
 	width: 100%;
@@ -1163,6 +1162,5 @@ display: none;
 	width: 100%;
 	height: 250px;
 	margin-top: 50px;
-	background-image: url('mobilefooter-10.png');
-}
+	background-image: url('mobilefooter-10.png');}
 }
